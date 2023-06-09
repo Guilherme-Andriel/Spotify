@@ -1,0 +1,316 @@
+/*
+* 
+* Style
+*/
+
+/* Layout
+-------------------------------------------------------------------------------------------------------*/
+
+html, body, #home{
+	height: 100%;
+	overflow-x: hidden;
+}
+
+body{
+
+	/*Efeito de fundo:  imagens sobrepostas e degradê*/
+	background: url(../imagens/capa.png), /*Já possui opacidade na img*/
+				url(../imagens/ruido.png), /*Já possui opacidade na img*/
+				linear-gradient(50deg, #ff4169, #7c26f8); /*Aparecerá um degradê*/
+				background-attachment: fixed; /*fundo fixo para dar aquele efeito massa e fazer com que o fundo apareça.*/
+				font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/* Barra de Navegação
+------------------------------------------------------------------------------*/
+
+.navbar-transparente{
+	padding: 15px 0px;
+	background: rgba(0, 0, 0, 0.6); /*os 3 zeros definem a cor preta e 0.6 a opacidade*/
+}
+
+/*formatando os links do menu*/
+
+.navbar-light .navbar-nav .nav-link{ 
+	color: white;
+
+}
+
+.navbar-light .navbar-nav .nav-link:hover{ 
+	color: #9bf0e1;
+
+}
+
+/*Formatando íconi do menu*/
+.navbar-light .navbar-toggler{
+	color: rgba(255, 255, 255, 5); /*branco e opacidade*/
+	border-color: rgba(255, 255, 255, 0.5);
+}
+
+.divisor{
+	width: 1px;
+	background: white;
+	margin: 12px 15px;
+
+}
+
+
+/* CONTEÚDO - CAPA
+--------------------------------------------------------------------------*/
+
+.centralizar-h{
+	text-align: center; /*Centralizar horizontalmente*/
+}
+
+.centralizar-v{
+	align-self: center; /*Centralizar verticalmente*/
+}
+
+.btn-custom{
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	text-transform: uppercase;
+	transition: background 0.4s, color 0.4s;
+	padding: 10px 20px;
+
+}
+
+.btn-roxo{
+	background: #7c25f8;
+}
+
+.btn-roxo:hover{
+	background: #6207e3;
+	color: white;
+}
+
+.btn-branco{
+	border: 2px solid white;
+}
+
+.btn-branco:hover{
+	background: white;
+	color: black;
+}
+
+.carousel-control-next, .carousel-control-prev{
+
+	width: 5%; /*Mudando a largura dos controles, pois assim muda as posições dos controles.*/
+}
+
+
+
+/* ESTRUTURA CONTEÚDOS
+----------------------------------------------------------------------------*/
+
+.caixa{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#servicos{
+	background: white;
+}
+
+
+.albuns{
+	padding: 10px 0;
+}
+
+.cor-servicos{
+	color: #7c25f8;
+}
+
+.cor-recursos{
+	color: #9bf0e1;
+}
+
+h2.cor-recursos{
+	color: white;
+}
+
+p.cor-recursos{
+	color: white;
+}
+
+.rotacionar{
+	transform: rotate(30deg); /*ROtacionando a img em graus*/
+	-moz-transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+	padding-left: 80px;
+}
+
+/* 	RODAPÉ
+----------------------------------------------------------------------------------------*/
+
+footer{
+	background: #000;
+	padding: 50px 0px 20px 0px;
+	position: relative; /*para colocar o footer sobre a img rotacionada*/
+}
+
+footer h4{
+	color: #919496;
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+
+footer .navbar-nav a{
+	color: white;
+	font-size: 0.8em;
+}
+
+
+footer .navbar-nav a:hover{
+	color: #9bf0e1;
+	text-decoration: none;
+}
+
+footer ul{
+	list-style: none;
+}
+
+footer ul li{
+	float: right;
+	margin: 0px 5px;
+}
+
+/* TIPOGRAFIA
+-----------------------------------------------------------------------------*/
+
+h1{
+	font-weight: 900; /*Nível de negrito*/
+	letter-spacing: -0.05em; /*espaçamento das letras*/
+	margin-bottom: 50px;
+	color: white;
+}
+
+h2{
+	font-size: 3em;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+h3{
+	font-size: 2em;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+p{
+	text-align: justify;
+}
+
+
+
+/*Extra small devices (portraint phones)*/
+
+    	@media(max-width: 575.98px){ 
+
+    		h1{
+    			font-size: 3em;
+    		}
+
+    		a.btn-branco{
+    			margin: 10px 15px;
+    		}
+
+    		.col-md-6 span img{
+    			margin-top: 20px;
+    		}
+
+    		footer .row{
+    			text-align: center;
+    		}
+
+    		footer .col-md-2{
+    			margin-top: 15px; 
+    			  		
+
+    		}
+
+    		footer .col-md-4{
+    			margin-top: 15px; 
+
+    		}
+
+    		.carousel-item.ajuste-esm{
+    			padding: 3px 0px;
+    		}
+
+
+    		
+    	}
+
+    	
+/*Small devices (landscape phones)*/
+
+    	@media(min-width: 576px) and (max-width: 767.98px){ 
+
+    		h1{
+    			font-size: 3em;
+    		}
+
+
+    		a.btn-branco{
+    			margin: 10px 15px;
+    		}
+
+    		.col-md-6 span img{
+    			margin-top: 20px;
+    		}
+
+    		footer .row{
+    			text-align: center;
+    		}
+
+    		footer .col-md-2{
+    			margin-top: 15px; 
+    			  		
+
+    		}
+
+    		footer .col-md-4{
+    			margin-top: 15px; 
+
+    		}
+
+    		.carousel-item.ajuste-sm{
+    			padding: 42px 10px 10px 10px;
+    		}
+
+
+    		
+    	}
+
+/*Medium devices (tablets, 768px e superior)*/
+    	@media(min-width: 768px) and (max-width:  991.98px){ 
+
+    		h1{
+    			font-size: 4em;
+    		}
+
+    		footer .row{
+    			text-align: center;
+    		}
+
+    	}
+
+/*Large devices (desktops, 992px e superior)*/
+    	@media(min-width: 992px) and (max-width: 1199.98px){ 
+
+    		h1{
+    			font-size: 5em;
+    		}
+    	}
+
+/*Extra large devices (large desktops, 1200px e superior)*/
+    	@media(min-width: 1200px){ 
+
+    		h1{
+    			font-size: 6em;
+    		}
+    	}
